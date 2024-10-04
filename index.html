@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 320px 9px 414px 9px 50px;
+    grid-template-rows: 748px 9px 155px 20px 130px;
+    width: 748px;
+    height: 748px;
+    background-color: #F0F1EC;
+
+}
+
+.item1 {
+    width: 320px;
+    height: 414px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #E72F24;
+    border: 9px solid #000;
+    border-left: white;
+}
+
+.item2 {
+  width: 440px; 
+    height: 414px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    border: 9px solid #000;
+    position: absolute; 
+    left: 575px;
+    border-top: white;
+    border-right: white;
+}
+
+.item3 {
+  width: 320px; 
+    height: 314px;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    border: 9px solid #000;
+    position: absolute; 
+    top:  365px;
+    border-left: white;
+}
+
+.item4 {
+  width: 390px; 
+    height: 314px;
+    grid-column: 5 / 6;
+    grid-row: 3 / 6;
+    border: 9px solid #000;
+    position: absolute; 
+    top:  365px;
+    left: 575px;
+}
+
+.item5 {
+    width: 58px; 
+    height: 130px;
+    grid-column: 5 / 6;
+    grid-row: 3 / 6;
+    background-color: #004592;
+    border: 9px solid #000;
+    position: absolute; 
+    top:  365px;
+    left: 956px;
+    border-bottom: 20px solid #000;
+    border-right: white;
+}
+
+.item6 {
+    width: 218px; 
+    height: 35px;
+    grid-column: 5 / 6;
+    grid-row: 3 / 6;
+    background-color: #F9D01E;
+    border: 9px solid #000;
+    position: absolute; 
+    top:  670px;
+    left: 575px;
+    border-bottom: white;
+}
+.item7 {
+    width: 180px; 
+    height: 35px;
+    grid-column: 5 / 6;
+    grid-row: 3 / 6;
+    background-color: #232629;
+    border: 9px solid #000;
+    position: absolute; 
+    top:  670px;
+    left: 785px;
+    border-bottom: white;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+    <div class="item5"></div>
+    <div class="item6"></div>
+    <div class="item7"></div>
+</div>
+</body>
+
+</html>
